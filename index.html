@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <html data-theme="cupcake"></html>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Money Master</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+ <header>
+  <h1 class="text-4xl text-center mt-8 font-extrabold text-teal-500">Money Master</h1>
+</header>
+  <main>
+    <section class="px-12">
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <img class="mt-8 rounded" src="image/Pexels Photo by Karolina Grabowska.png" alt="">
+    
+      <div class="bg-gradient-to-r from-cyan-500 via-indigo-500 to-blue-500 rounded mt-8">
+             <h2 class="font-bold text-2xl text-white text-center mt-10">Income</h2>
+
+        <div class="flex flex-row justify-center ">
+           <p class="text-center px-2 text-white mt-10 font-bold">Income:</p>
+              <input id="income-field" class="mt-8 py-2 px-2 rounded" type="text" placeholder= "Total Income">
+            </div>
+
+            <h3 class="text-center mt-5 text-white font-extrabold text-xl">Expenses</h3>
+
+             <div class="flex flex-row justify-center ">
+                 <p class="text-center px-3 mt-10 text-white font-bold">Food:</p>
+                 <input id="food-field" class="mt-8 py-2 px-2 rounded" type="text" placeholder="Please Enter Price">
+                </div>
+
+        <div class="flex flex-row justify-center ">
+            <p class="text-center text-white px-4 mt-10 font-bold">Rent:</p>
+               <input id="rent-field" class="mt-8 py-2 px-2 rounded" type="text" placeholder="Please Enter Price">
+              </div>
+      <div class="flex flex-cols justify-center">
+         <p class="text-center text-white px-2 mt-10 font-bold">Clothes:</p>
+             <input id="cloths-field" class="mt-8 py-2 px-2 rounded" type="text" placeholder="Please Enter Price">
+            </div>
+
+
+      <div class="grid grid-rows">
+         <button id="btn-calculate" class="mt-8 rounded-lg w-1/4 mx-auto py-2 font-semibold text-2xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500 text-white">Calculate</button>
+           <p class="text-center mt-5 text-2xl text-white font-extrabold">Total Expenses: <span id="total-expenses">00</span></p>
+            <p class="text-center text-white mt-2 text-2xl font-extrabold">Balance: <span id="total-balance">00</span></p>
+          </div>
+
+      <div class="flex justify-center mt-8 ">
+           <p class="text-2xl font-semibold text-white px-2 py-3">Save:</p>
+            <input class="rounded-lg p-2" type="text" name="" id="percentage-field" placeholder="Please Enter Percentage">
+             <p class="px-2 py-2 text-white text-2xl">%</p>
+               <button id="btn-save" class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500 px-9 py-2 text-2xl font-semibold rounded-lg text-white">Save</button>
+              </div>
+
+               <p class="text-center text-white font-extrabold text-2xl mt-3">Saving Amount: <span id="total-saving">00</span></p>
+              <p class="text-center text-white font-extrabold text-2xl mt-3">Remaining Balance: <span id="remaining-balance">00</span></p>
+            </div>
+          </div>
+    </section>
+  </main>
+<script src="js/index.js"></script>
+</body>
+</html>
